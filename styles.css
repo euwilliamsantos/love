@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background: black;
+	color: white;
+}
+
+body {
+	font-family: 'SemiBold', sans-serif;
+}
+
+.texto1 {
+	text-align: center;
+	margin: 50px auto; /* Centraliza verticalmente e define margem lateral automática */
+}
+
+.butao a {
+	background: red;
+	border-radius: 9%;
+	color: black;
+	text-align: center;
+	display: block;
+	margin: 20px auto; /* Centraliza e define margem lateral automática */
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.butao a:hover {
+	background: white;
+}
+
+.imagem {
+	width: 60px;
+	display: block;
+	margin: 20px auto; /* Centraliza e define margem lateral automática */
+}
+
+/* Dispositivos pequenos (Smartphones) */
+@media only screen and (max-width: 600px) {
+	.texto1 {
+		margin: 20px auto; /* Ajusta a margem para dispositivos menores */
+	}
+
+	.butao a {
+		position: fixed;
+		right: 40%;
+	}
+
+	.imagem {
+		position: fixed;
+		bottom: 60%;
+		right: 40%;
+	}
+}
+
+/* Dispositivos médios e grandes (Tablets e Desktops) */
+@media only screen and (min-width: 601px) {
+	.texto1 {
+		margin: 200px auto; /* Ajusta a margem para dispositivos maiores */
+	}
+
+	.butao a {
+		position: fixed;
+		right: 50%;
+		top: 70%;
+		transform: translateX(50%); /* Centraliza horizontalmente */
+	}
+
+	.imagem {
+		position: fixed;
+		right: 50%;
+		top: 60%;
+		transform: translateX(50%); /* Centraliza horizontalmente */
+	}
+}

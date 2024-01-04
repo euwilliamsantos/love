@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background: black;
+	color: white;
+}
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+
+	.text{
+		text-align: center;
+	}
+
+
+	p{
+		font-family: 'SemiBold', sans-serif;
+	}
+
+
+
+
+
+}
